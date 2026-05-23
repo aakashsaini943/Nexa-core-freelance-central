@@ -430,6 +430,215 @@ section{position:relative;z-index:1;padding:46px 5%}
   position:relative;
 }
 
+
+
+/* =========================
+   MINIMAL ENTERPRISE SECTION
+========================= */
+
+#solutions{
+  padding:90px 8%;
+  background:#060b16;
+}
+
+.solutions-box{
+  max-width:1200px;
+  margin:auto;
+  padding:55px;
+  border-radius:32px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.06),
+      rgba(255,255,255,0.03)
+    );
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(18px);
+
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.35);
+}
+
+/* LEFT */
+
+.section-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  color:#dbe7ff;
+  font-size:13px;
+  margin-bottom:24px;
+}
+
+.section-title{
+  font-size:54px;
+  line-height:1.1;
+  color:#fff;
+  margin-bottom:18px;
+  font-weight:800;
+}
+
+.section-title span{
+  background:linear-gradient(90deg,#60a5fa,#22d3ee);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.section-sub{
+  color:#94a3b8;
+  line-height:1.8;
+  font-size:16px;
+  max-width:580px;
+  margin-bottom:30px;
+}
+
+/* TAGS */
+
+.solutions-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.solutions-tags span{
+  padding:12px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  color:#e2e8f0;
+  font-size:14px;
+}
+
+/* RIGHT CARD */
+
+.solutions-card{
+  padding:35px;
+  border-radius:28px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.08),
+      rgba(255,255,255,0.03)
+    );
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.3);
+}
+
+.card-top{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#cbd5e1;
+  margin-bottom:28px;
+  font-size:14px;
+}
+
+.live-dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 15px #22c55e;
+}
+
+.solutions-card h3{
+  font-size:42px;
+  color:#fff;
+  margin-bottom:24px;
+}
+
+/* PROGRESS */
+
+.progress-line{
+  width:100%;
+  height:10px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.06);
+  overflow:hidden;
+  margin-bottom:35px;
+}
+
+.progress-fill{
+  width:99%;
+  height:100%;
+  border-radius:999px;
+  background:linear-gradient(90deg,#2563eb,#22d3ee);
+}
+
+/* STATS */
+
+.card-stats{
+  display:flex;
+  justify-content:space-between;
+}
+
+.card-stats strong{
+  display:block;
+  font-size:28px;
+  color:#fff;
+  margin-bottom:6px;
+}
+
+.card-stats p{
+  color:#94a3b8;
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .solutions-box{
+    grid-template-columns:1fr;
+    padding:35px;
+  }
+
+  .section-title{
+    font-size:42px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  #solutions{
+    padding:70px 5%;
+  }
+
+  .solutions-box{
+    padding:28px;
+    border-radius:24px;
+  }
+
+  .section-title{
+    font-size:34px;
+  }
+
+  .solutions-card h3{
+    font-size:32px;
+  }
+
+}
+
+
+
+
 /* ============================================================
    TESTIMONIALS
 ============================================================ */
@@ -491,7 +700,7 @@ section{position:relative;z-index:1;padding:46px 5%}
 /* ============================================================
    TECH STACK
 ============================================================ */
-.tech-grid{
+/* .tech-grid{
   margin-bottom: 25px;
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(130px,1fr));
@@ -513,7 +722,7 @@ section{position:relative;z-index:1;padding:46px 5%}
   box-shadow:var(--shadow),0 0 20px var(--cyan-glow);
 }
 .tech-icon{font-size:2rem}
-.tech-name{font-size:0.8rem;font-weight:500;color:var(--gray);text-align:center;letter-spacing:0.04em}
+.tech-name{font-size:0.8rem;font-weight:500;color:var(--gray);text-align:center;letter-spacing:0.04em} */
 
 /* ============================================================
    PRICING
